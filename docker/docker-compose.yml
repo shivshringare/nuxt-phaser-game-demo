@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nuxt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nuxt_dev
+    container_name: nuxt_dev
+    working_dir: /game
+    tty: true
+    volumes:
+    - ../:/game
+    ports:
+      - "3000:3000"
