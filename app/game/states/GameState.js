@@ -5,6 +5,8 @@ class GameState extends Phaser.State {
     if (this.game.$settings.debug) {
       this.game.time.advancedTiming = true;
     }
+
+    this.add.image(0, 0, 'background')
   }
 
   render() {

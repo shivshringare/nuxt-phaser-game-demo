@@ -1,6 +1,12 @@
 export default {
   containerId: 'phaser-game-container',
   debug: true,
-  width: 1280,
-  height: 720
+  width: 800,
+  height: 640,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 500 },
+    },
+  }
 }
